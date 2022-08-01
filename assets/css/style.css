@@ -306,11 +306,23 @@ label{
         overflow: hidden;
       }
 
-      #iPD img {
-          /* object-fit: cover; */
-          height: 500px;
+      
+
+      #investment-dash{
+        /* make fit container*/
+        /* make image cover*/
+        background-size: cover;
+        height: 100vh
+
+        
       }
 
+      #tech-blog{
+        background-size: contain;
+      }
+      #tech-blog-link{
+        align-items: center;
+      }
 
 
     .project img{
