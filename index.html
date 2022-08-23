@@ -1,133 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booker King Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- exo 2, barlow, shadows into light -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Exo+2:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- navigation -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#works">My Works</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
+    <div class="nav-container" style="visibility: hidden;
+    transition: all ease-in-out .2;">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#works">My Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Home -->
-    <header id="home">
-        <h1 class="heading">HI, I AM</h1>
-        <h1 class="heading">Booker King</h1>
-        <br><br>
-        <p>AND THIS IS MY Portfolio</p>
-        </header>
-<div class="container">
-    <!--My Works  -->
-    <section id="works">
-        <h1 class="wheading">My Works</h1>
-        <div style="clear: both;"></div>
-        <div id="projects">
-            <div class="project-full">
-                <div class="project-full-ch">
-                    <h2>
-                        Surf Report
-                    </h2>
-                    
-                    <span>MERN Stack</span>
-                </div>
-            </div>
-        <div class="project left">
-            <div class="project-ch">
-                <h2>
-                    LED Wall
-                </h2>
-                <span>Node / IOT</span>
-            </div>
-        </div>
-        <div class="project right">
-            <img id="tech-blog" src="assets/images/the-tech-blog.jpg" alt="calc project" style="height: 500px">
-            <div class="project-ch">
-                <h2 id="tech-blog-link">
-                <a  href="https://github.com/FredElick/project-2">Tech Talk</href>
-                </h2>
-                <!-- <span>react/ Javascript /css</span> -->
-            </div>
-        </div>
-        <div style="clear: both;"></div>
-
-        <div class="project left" id="iPD">
-            <img id="investment-dash" src="assets/images/IP-dash.jpg" alt="investment Portfolio">
-
-            <div class="project-ch">
-                <h2>
-                   <a href="https://cpm-128.github.io/investment-portfolio-dashboard/"> Invesment Portfolio Dashboard</a>
-                </h2>
-                <!-- <span>MERN Stack</span> -->
-            </div>
-        </div>
-        <div class="project right">
-        <img src="assets/images/hero-bg01.jpg"  alt="Run buddy">
-            <div class="project-ch">
-                <h2>
-                    Run Buddy
-                </h2>
-                <span>HTML / CSS</span>
-            </div>
-        </div>
-    </div>
-    <!-- End of container -->
-        <div style="clear: both;"></div>
-    </div>
- </section>
-
-    <!-- About Me -->
-    <section id="about">
-        <h1 class="heading">About Me</h1>
-        <div class="about">
-            <div class="img-cont">
-                <img src="https://cdn.pixabay.com/photo/2019/11/22/05/56/smiling-4644153_960_720.jpg" alt="My Pic">
-            </div>
-            <div class="name data-cont">
-                <h2>I'm Booker King</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, velit consequatur tempora placeat quam nam. Ex libero debitis rerum laudantium magni, temporibus voluptate consequatur, animi, voluptas ratione praesentium dolore eveniet.</p>
-            </div>
-        </div>
-    </section>
-    <div style="clear: both;"></div>           
-    <!-- Contact -->
-    <section id="contact">
-        <div class="contact-info">
-            <div class="contact-form">
-                <form>
-                <label for="name">Your name:</label><br />
-                    <input type="text"  id="name"><br />
-                    <label for="name">E-mail:</label><br />
-                    <input type="text"  id="name"><br />
-                    <label for="msg">Your Message:</label><br />
-                    <textarea name="" id="msg" cols="50" rows="10"></textarea><br>
-                    <input type="submit" value="Send Data">
-                </form>
-            </div>
-            <div class="conact-menu">
-                <h2>Contact Info</h2>
-                <ul>
-                    <li>555-555-5555</li>
-                    <li>Email@website.com</li>
-                    <li>Github</li>
-                    <li>linkedin</li>
-                </ul>
-            </div>
-           
-        </div>
-        <div style="clear: both;"></div> 
-    </section>
+    <header class="home">
         
+        <h1 class="heading">HI, I AM</h1>
+        <h1 class="heading" id="my-name">Booker King</h1>
+        <p>AND THIS IS MY Portfolio</p>
+    </header>
+
+
+
+    <div class="container" id="work-container">
+        <!--My Works  -->
+        <h1 class="work-heading">My Works</h1>
+        <section class="works">
+
+            <!-- run buddy, investment dashboard, social net api,, tech talk blog   -->
+            <div class="work-item" id="run-buddy"></div>
+            <div class="work-item" id="investment-dashboard"></div>
+            <div class="work-item" id="social-net-api"></div>
+            <div class="work-item" id="tech talk blog"></div>
+
+
+            <!-- About Me -->
+            <section id="about">
+                <h1 class="heading">About Me</h1>
+                <div class="about">
+                    <div class="img-cont">
+                        <img id='profile-pic' src="assets/images/portfolio-pic.jpg" alt="portfolio-pic">
+                    </div>
+                    <div class="name-about-me">
+                        <h2>I'm Booker King</h2>
+                        <p>Full stack web developer currently undergoing the engineering program at Wake Tech. Further,
+                            I will be graduating from the University of Chapel Hill Full-Stack Bootcamp in September,
+                            with skills in Javascript, CSS, and React.js. Building web applications is my passion and I
+                            am looking for a position where I can utilize my skills to create a great user experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div style="clear: both;"></div>
+            <!-- Contact -->
+            <section id="contact">
+                <div class="contact-info">
+                    <div class="contact-form">
+                        <form>
+                            <label for="name">Your name:</label><br />
+                            <input type="text" id="name"><br />
+                            <label for="name">E-mail:</label><br />
+                            <input type="text" id="name"><br />
+                            <label for="msg">Your Message:</label><br />
+                            <textarea name="" id="msg" cols="50" rows="10"></textarea><br>
+                            <input type="submit" value="Send Data">
+                        </form>
+                    </div>
+                    <div class="conact-menu">
+                        <h2>Contact Info</h2>
+                        <ul>
+
+                            <li>bookerking9@gmail.com</li>
+                            <li><a href="https://github.com/btking1">GitHub</a>
+                            <li>
+                                <a href="https://www.linkedin.com/in/booker-king-42493a247/">linkedin</a>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div style="clear: both;"></div>
+            </section>
+
 
 </body>
-</html>
+<script>
+    nav = document.querySelector('.nav-container');
+
+    window.addEventListener('scroll', function () {
+        //make nav visible for 5 seconds on scroll or if user mouse over nav
+        if (window.scrollY > 100 || nav.style.visibility == 'visible') {
+            nav.style.visibility = 'visible';
+            setTimeout(function () {
+                nav.style.visibility = 'hidden';
+            }, 5000);
+        } 
         
+    }
+    );
+</script>
+
+</html>
